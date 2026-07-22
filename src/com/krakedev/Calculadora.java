@@ -20,4 +20,14 @@ public class Calculadora {
 		return resultado;
 	}
 	
+	public double dividir(double a, double b) {
+		if(b==0) {
+			System.out.println("No se puede dividir entre cero");
+		}
+		
+		double resultado=(double)a/b;
+		
+		return resultado;
+	}
+
 }
