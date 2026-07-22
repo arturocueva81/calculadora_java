@@ -31,5 +31,10 @@ public class Calculadora {
 		double promedio=(a+b+c)/3;
 		return promedio;
 	}
+	
+	public void mostrarResultado() {
+		String mensaje= "Ahorita no joven, Salí al almuerzo. Regreso en 15 minutos";
+		System.out.println(mensaje);
+	}
 
 }

@@ -29,6 +29,10 @@ public class TestCalculadora {
 		
 		//Funcion Promediar doubles, reciben los parametros de tipo double: valor1, valor2 y valor3
 		System.out.println("El  promedio de: "+valor1+", "+valor2+", y : "+valor3+", es: "+c1.promediar(valor1, valor2, valor3));
+		
+		//Funcion mostrarResultado  no recibe ningun parametros, solo imprime el mensaje en pantalla
+		System.out.println("MENSAJE: ");
+		c1.mostrarResultado();
 	}
 
 }
