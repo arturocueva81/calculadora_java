@@ -6,15 +6,14 @@ public class VehiculoTest {
 		
 		Vehiculo v=new Vehiculo();
 		
-		v.anio="2005";
-		v.marca="Toyota";
-		v.modelo="Corolla";
+		v.setAnio("2005");
+		v.setMarca("Toyota");
+		v.setModelo("Corolla");
 		
 		System.out.println();
-		System.out.println("Año: "+ v.anio);
-		System.out.println("Marca: "+ v.marca);
-		System.out.println("Modelo: "+ v.modelo);
-		System.out.println();
+		System.out.println("Año: "+ v.getAnio());
+		System.out.println("Marca: "+ v.getMarca());
+		System.out.println("Modelo: "+ v.getModelo());
 
 	}
 

@@ -7,8 +7,8 @@ public class Calculadora {
 		return resultado;
 	}
 	
-	public int restar (int a, int b) {
-		int resultado=a-b;
+	public double restar (double a, double b) {
+		double resultado=a-b;
 		return resultado;
 	}
 	
@@ -27,14 +27,17 @@ public class Calculadora {
 	}
 	
 	public double promediar(double a, double b, double c) {
-		
 		double promedio=(a+b+c)/3;
 		return promedio;
 	}
 	
 	public void mostrarResultado() {
-		String mensaje= "Ahorita no joven, Salí al almuerzo. Regreso en 15 minutos";
+		String mensaje= "Ahorita no joven, Sali al almuerzo. Regreso en 15 minutos";
 		System.out.println(mensaje);
 	}
-
+	
+	public double descuento(double precio, double dscto) {
+		double total=precio-(precio*(dscto/100)); 
+		return total;
+	}
 }

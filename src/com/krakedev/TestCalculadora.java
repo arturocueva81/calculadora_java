@@ -25,7 +25,7 @@ public class TestCalculadora {
 		System.out.println("El producto entre "+num3+" y "+num4+" es: "+c1.multiplicar(num3, num4));
 		
 		//Funcion Dividir doubles, reciben los parametros de tipo double: dividendo y divisor
-		System.out.println("La división entre "+dividendo+" y "+divisor+" es: "+c1.dividir(dividendo, divisor));
+		System.out.println("La division entre "+dividendo+" y "+divisor+" es: "+c1.dividir(dividendo, divisor));
 		
 		//Funcion Promediar doubles, reciben los parametros de tipo double: valor1, valor2 y valor3
 		System.out.println("El  promedio de: "+valor1+", "+valor2+", y : "+valor3+", es: "+c1.promediar(valor1, valor2, valor3));
@@ -33,6 +33,12 @@ public class TestCalculadora {
 		//Funcion mostrarResultado  no recibe ningun parametros, solo imprime el mensaje en pantalla
 		System.out.println("MENSAJE: ");
 		c1.mostrarResultado();
+		
+		Calculadora test = new Calculadora();
+		System.out.println("La resta es:"+test.restar(100.5, 40.5));
+		System.out.println("El descuento es:"+test.descuento(200, 15));
+		
+		
 	}
 
 }
