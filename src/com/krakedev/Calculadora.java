@@ -2,42 +2,56 @@ package com.krakedev;
 
 public class Calculadora {
 	
-	public int sumar (int a, int b) {
-		int resultado=a+b;
-		return resultado;
+	private double num1, num2, num3;
+	private String mensaje;
+	
+	//Constructores
+	public Calculadora(double num1, double num2) {
+		this.num1=num1;
+		this.num2=num2;
 	}
 	
-	public double restar (double a, double b) {
-		double resultado=a-b;
-		return resultado;
+	public Calculadora(String mensaje) {
+		this.mensaje=mensaje;
 	}
 	
-	public double multiplicar (double a, double b) {
-		double resultado=a*b;
-		return resultado;
+	public Calculadora(double num1, double num2, double num3) {
+		this.num1=num1;
+		this.num2=num2;
+		this.num3=num3;
 	}
 	
-	public double dividir(double a, double b) {
-		if(b==0) {
+	//FUNCIONES DE OPERACIONES MATEMATICAS
+	public double sumar () {
+		return num1+num2;
+	}
+	
+	public double restar () {
+		return num1-num2;
+	}
+	
+	public double multiplicar () {
+		return num1*num2;
+	}
+	
+	public double dividir() {
+		if(num2==0) {
 			System.out.println("No se puede dividir entre cero");
+			return 0;
 		}
-		
-		double resultado=(double)a/b;
-		return resultado;
+		return num1/num2;
 	}
 	
-	public double promediar(double a, double b, double c) {
-		double promedio=(a+b+c)/3;
-		return promedio;
+	//Funciones de Promedio, MostrarResultado, Descuento
+	public double promediar() {
+		return (num1+num2+num3)/3;
 	}
 	
 	public void mostrarResultado() {
-		String mensaje= "Ahorita no joven, Sali al almuerzo. Regreso en 15 minutos";
 		System.out.println(mensaje);
 	}
 	
-	public double descuento(double precio, double dscto) {
-		double total=precio-(precio*(dscto/100)); 
-		return total;
+	public double descuento() {
+		return num1-(num1*(num2/100)); 
 	}
 }

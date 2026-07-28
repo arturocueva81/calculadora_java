@@ -4,40 +4,21 @@ public class TestCalculadora {
 
 	public static void main(String[] args) {
 		
-		Calculadora c1= new Calculadora();
-		int num1, num2;
-		double num3, num4, dividendo, divisor,valor1, valor2, valor3;
-		num1=2;
-		num2=7;
-		num3=10;
-		num4=5;
-		dividendo=10;
-		divisor=2;
-		valor1=10;
-		valor2=8;
-		valor3=9;
+		Calculadora c1= new Calculadora(10,2);
+		System.out.println("Suma: "+c1.sumar());
+		System.out.println("Resta:"+c1.restar());
+		System.out.println("Multiplicacion: "+c1.multiplicar());
+		System.out.println("Division entre: "+c1.dividir());
 		
-		System.out.println("Suma: "+c1.sumar(num1, num2));
-		System.out.println("Resta:"+c1.restar(num1, num2));
+		Calculadora c2= new Calculadora(7,8,9);
+		System.out.println("Promedio: "+c1.promediar());
 		
-		//Taller Calculadora
-		//Funcion Multiplicar doubles, reciben los parametros de tipo double: num3 y num 4
-		System.out.println("El producto entre "+num3+" y "+num4+" es: "+c1.multiplicar(num3, num4));
-		
-		//Funcion Dividir doubles, reciben los parametros de tipo double: dividendo y divisor
-		System.out.println("La division entre "+dividendo+" y "+divisor+" es: "+c1.dividir(dividendo, divisor));
-		
-		//Funcion Promediar doubles, reciben los parametros de tipo double: valor1, valor2 y valor3
-		System.out.println("El  promedio de: "+valor1+", "+valor2+", y : "+valor3+", es: "+c1.promediar(valor1, valor2, valor3));
-		
-		//Funcion mostrarResultado  no recibe ningun parametros, solo imprime el mensaje en pantalla
+		Calculadora c3 = new Calculadora("Ahorita no joven, Sali al almuerzo. Regreso en 15 minutos");
 		System.out.println("MENSAJE: ");
-		c1.mostrarResultado();
+		c3.mostrarResultado();
 		
-		Calculadora test = new Calculadora();
-		System.out.println("La resta es:"+test.restar(100.5, 40.5));
-		System.out.println("El descuento es:"+test.descuento(200, 15));
-		
+		Calculadora test = new Calculadora(200,14);
+		System.out.println("El descuento es:"+test.descuento());
 		
 	}
 
